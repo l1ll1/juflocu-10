@@ -23,21 +23,26 @@ EOF
 apt -y update
 apt -y upgrade
 apt install -y python3-dev
-apt -y update
-apt -y upgrade
 apt -y install sudo
 apt -y install curl
 apt -y install python2.7-dev
-apt -y update
 apt install -y python3-pip
 apt -y install python3-venv
 apt install -y pandoc
 curl -sL https://deb.nodesource.com/setup_14.x | bash -
 apt -y update
+apt -y upgrade
 apt -y install nodejs
+
+curl https://swift.rc.nectar.org.au/v1/AUTH_810/CVL-Singularity-External-Files/cudnn-10.1-linux-x64-v7.6.5.32.tgz -o /tmp/cudnn.tgz
+cd /usr/local
+tar zxf /tmp/cudnn.tgz
+
+
 mkdir -p /opt/
 python3 -m venv /opt/jupyter
 . /opt/jupyter/bin/activate
+pip3 install --upgrade pip
 pip3 install jupyterlab
 pip3 install pandas
 pip3 install bokeh
