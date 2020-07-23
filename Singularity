@@ -33,6 +33,8 @@ curl -sL https://deb.nodesource.com/setup_14.x | bash -
 apt -y update
 apt -y upgrade
 apt -y install nodejs
+apt -y install pandoc
+apt -y install python3-pypandoc python3-pandocfilters
 
 curl https://swift.rc.nectar.org.au/v1/AUTH_810/CVL-Singularity-External-Files/cudnn-10.1-linux-x64-v7.6.5.32.tgz -o /tmp/cudnn.tgz
 cd /usr/local
