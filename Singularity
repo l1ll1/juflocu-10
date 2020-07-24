@@ -33,6 +33,7 @@ curl -sL https://deb.nodesource.com/setup_14.x | bash -
 apt -y update
 apt -y upgrade
 apt -y install nodejs
+apt -y install texlive-xetex
 apt -y install pandoc
 apt -y install python3-pypandoc python3-pandocfilters
 
