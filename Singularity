@@ -53,6 +53,7 @@ pip3 install bokeh-plot
 pip3 install jupyter-bokeh
 pip3 install scipy
 pip3 install tensorflow-gpu
+pip3 install modin[ray]
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install @bokeh/jupyter_bokeh
 
